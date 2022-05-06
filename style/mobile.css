@@ -25,6 +25,7 @@ header {
     top: calc(100% - 2.5rem - var(--content-padding) * 2);
     width: 100vw;
     height: fit-content;
+    margin: 0;
     padding: var(--content-padding);
     text-align: right;
 }
@@ -79,10 +80,6 @@ aside h3 {
 aside .list-el {
     font-size: .875rem;
 }
-
-/* button#sidebtn:focus ~ ul, ul:active {
-    display: block;
-} */
 
 main {
     width: 100vw;

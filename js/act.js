@@ -1,4 +1,5 @@
 const con_padding = Number(getComputedStyle(document.documentElement).getPropertyValue('--content-padding-top').replace(/[^0-9.]/g, '')) * 16;
+let list_el_is_clicked = false;
 
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
     changeTheme('dark');
@@ -20,10 +21,11 @@ document.getElementById('sidebtn').addEventListener('click', () => {
     }
 });
 
-document.getElementById('sidebtn').addEventListener('blur', () => { document.querySelectorAll('aside > ul').forEach(e => { e.style.display = 'none'; }); });
+document.getElementById('sidebtn').addEventListener('blur', () => { if(list_el_is_clicked) document.querySelectorAll('aside > ul').forEach(e => { e.style.display = 'none'; }); });
 
 document.querySelectorAll('.list-el').forEach(e => {
     e.addEventListener('click', (event) => {
+        list_el_is_clicked = true;
         event.preventDefault();
         event.stopPropagation();
         if(matchMedia('(hover: none) and (pointer: coarse)').matches) {
@@ -31,6 +33,7 @@ document.querySelectorAll('.list-el').forEach(e => {
         }
         const pos = document.querySelector(`div.con#${e.id}`).getBoundingClientRect();
         window.scrollTo(0, window.pageYOffset + pos.y - con_padding + ((e.id.split('-').length === 3) ? 4 : 0));
+        list_el_is_clicked = false;
     });
 });
 
