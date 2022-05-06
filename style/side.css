@@ -16,7 +16,7 @@ header, aside {
 
 header {
     width: 25vw;
-    height: 100vh;
+    height: calc(100vh - var(--content-padding-top) - var(--content-padding));
     left: 0;
     align-items: flex-end;
     justify-content: space-between;
