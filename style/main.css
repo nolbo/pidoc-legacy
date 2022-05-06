@@ -1,0 +1,85 @@
+
+main {
+    width: calc(50vw - var(--scroll-size));
+    margin: 0px 0px 0px 0px;
+    padding: 2rem;
+    padding-top: var(--content-padding-top);
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Pretendard';
+    color: var(--text-color);
+}
+
+main div.con {
+    margin-bottom: var(--content-margin);
+}
+
+main article, div.con.small {
+    padding-left: var(--article-padding);
+}
+
+div.con.small {
+    margin-left: var(--article-padding);
+    border-left: 4px solid var(--box-color);
+    box-sizing: border-box;
+}
+
+main article {
+    margin: var(--article-margin);
+    box-sizing: border-box;
+}
+
+main article.table {
+    overflow: auto;
+}
+main h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.small h1 {
+    font-size: 1.25rem;
+}
+
+main a {
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: underline;
+    text-decoration-color: var(--color-green);
+    text-decoration-thickness: 4px;
+    cursor: pointer;
+}
+
+main mark {
+    background-color: var(--color-red);
+    font-weight: 700;
+    color: var(--mark-color);
+}
+
+main li {
+    list-style-position: inside;
+}
+
+main table {
+    overflow: auto;
+    width: 100%;
+}
+
+main table th {
+    padding: 1rem 0rem;
+    border-top: 4px solid var(--text-color);
+    border-bottom: 4px solid var(--text-color);
+}
+
+main table td {
+    border-right: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    overflow: auto;
+}
+
+main table td:last-child {
+    border-right: none;
+}
+
+main table td {
+    padding: .75rem;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Pidoc">
+    <meta name="keywords" content="pidoc, 파이독, 프로그래밍, 코딩, 카카오톡봇">
+    <meta name="description" content="Programming Docs for You">
+    <meta name="author" content="nolbo">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nolbo.github.io/pidoc/">
+    <meta property="og:title" content="Pidoc">
+    <meta property="og:image" content="img/grp.png">
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:description" content="Programming Docs for You">
+    <link rel="canonical" href="https://nolbo.github.io/pidoc/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet" href="style/base.css" />
+    <link rel="stylesheet" href="style/side.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/code.css" />
+    <link rel="stylesheet" href="style/custom.css" />
+    <link rel="stylesheet" href="style/mobile.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="style/dark.css" media="(prefers-color-scheme: dark)" class="media_dark">
+    <link rel="stylesheet" href="style/darkcode.css" media="(prefers-color-scheme: dark)" class="media_dark">
+    <link rel="favicon"    href="../../img/pidoc_square.svg" />
+    <link rel="icon"       href="../../img/pidoc_square.svg" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script type="text/javascript">
+        hljs.highlightAll();
+        // hljs.initLineNumbersOnLoad();
+    </script>
+    <title>Pidoc</title>
+</head>
+<body>
+    <header>
+        <img id="icon" src="img/pidoc.svg" alt="pidoc" />
+        <button id="theme" type="button"></button>
+    </header>
+    <main>
+        <section id="mainpg">
+            <div class="con" id="d1-1">
+                <h1>Hello World!</h1>
+                <article>
+                    <p><strong>Pidoc</strong>에 잘 오셨습니다! Pidoc는 프로그래밍에 관한 여러 문서를 모아놓은 곳입니다. <a href="https://github.com/nolbo/pidoc" target="_blank">Github 레포지토리</a>를 통해 누구나 함께 문서를 추가/수정할 수 있으니 참고하세요!</p>
+                </article>
+            </div>
+            <div class="con" id="d1-2">
+                <h1>언어</h1>
+                <article>
+                    <p>JS, Python과 같은 언어를 다루는 문서에요. 왜 굳이 프로그래밍 언어라고 해놓지 않았냐고요? HTML이나 CSS는 섭섭할 수 있잖아요.</p>
+                </article>
+                <article>
+                    <div data-custom-flex>
+                        <span data-custom-docbox class="language js">.JS</span>
+                        <span data-custom-docbox class="language py">.PY</span>
+                        <span data-custom-docbox class="language java">.JAVA</span>
+                        <span data-custom-docbox class="language kt">.KT</span>
+                        <span data-custom-docbox class="language c">.C</span>
+                        <span data-custom-docbox class="language cpp">.CPP</span>
+                        <span data-custom-docbox class="language cs">.CS</span>
+                    </div>
+                </article>
+            </div>
+            <div class="con" id="d1-3">
+                <h1>프레임워크 / 라이브러리</h1>
+                <article>
+                    <p>개발을 하기 위해 다양한 프레임워크나 라이브러리를 사용할 때가 있죠. 이러한 것들을 위한 문서에요.</p>
+                </article>
+                <div class="con small" id="d1-3-1">
+                    <h1>웹 (Web)</h1>
+                    <article>
+                        <p>웹 개발에 쓰이는 라이브러리나 프레임워크에 관한 문서에요.</p>
+                    </article>
+                </div>
+                <div class="con small" id="d1-3-2">
+                    <h1>앱 (App)</h1>
+                    <article>
+                        <p>앱 개발에 쓰이는 라이브러리나 프레임워크에 관한 문서에요.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <button id="sidebtn" type="button"></button>
+        <ul>
+            <h3>메인 페이지</h3>
+            <li class="list-el" id="d1-1">Hello World!</li>
+            <li class="list-el" id="d1-2">언어</li>
+            <li class="list-el" id="d1-3">프레임워크 / 라이브러리</li>
+            <ul class="list-el">
+                <li class="list-el" id="d1-3-1">웹 (Web)</li>
+                <li class="list-el" id="d1-3-2">앱 (App)</li>
+            </ul>
+            <li class="list-el" id="d1-4">카카오톡 봇</li>
+        </ul>
+    </aside>
+</body>
+<script type="text/javascript" src="js/act.js"></script>
+</html>

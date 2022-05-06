@@ -1,0 +1,91 @@
+
+aside *::-webkit-scrollbar {
+    display: none;
+}
+
+header, aside {
+    position: fixed;
+    top: 0;
+    padding: var(--content-padding);
+    padding-top: 0;
+    margin-top: var(--content-padding-top);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 25vw;
+    height: 100vh;
+    left: 0;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+aside {
+    height: calc(100vh - var(--content-padding-top) - var(--content-padding));
+    left: 0;
+    margin-left: calc(75vw - var(--scroll-size));
+    align-items: flex-start;
+    overflow: auto;
+}
+
+div#header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+img#icon {
+    width: 3rem;
+    height: auto;
+    transition-property: filter;
+    transition-duration: .5s;
+}
+
+button#sidebtn {
+    display: none;
+}
+
+button#theme {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: var(--text-color);
+    background-image: url(../img/theme_light.svg);
+    background-size: 1.75rem 1.75rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: .75rem;
+    border: none;
+    border-radius: .75rem;
+    transition-property: background;
+    transition-duration: .5s;
+}
+
+div#list {
+    margin-top: 2rem;
+    max-width: 15vw;
+    overflow: auto;
+}
+
+aside h3 {
+    color: var(--text-color);
+    margin: .5rem 0rem;
+}
+
+aside .list-el {
+    padding-left: 1em;
+    cursor: pointer;
+    display: block;
+    border-left: 4px solid var(--box-color);
+    color: var(--text-unfocused-color);
+    transition-property: color, border-color, font-weight;
+    transition-duration: .2s;
+}
+
+aside .list-el[data-selected] {
+    color: var(--text-color);
+    border-color: var(--text-color);
+    font-weight: bold;
+}

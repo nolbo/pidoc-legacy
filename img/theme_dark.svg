@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewbox="0 0 48 48" preserveAspectRatio="xMaxYMin meet">
+    <path d="
+        M 24 6
+        A 1, 1, 1, 0, 1, 24, 42
+        A 20, 20, 1, 0, 1, 6, 24
+        A 1, 1, 1, 0, 0, 24, 6
+    "
+    stroke="black"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="4" />
+</svg>

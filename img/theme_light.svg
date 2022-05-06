@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewbox="0 0 48 48" preserveAspectRatio="xMaxYMin meet">
+    <circle fill="white" r="12" cx="24" cy="24" />
+    <line stroke="white" stroke-width="4" stroke-linecap="round" x1="24" y1="2" x2="24" y2="6" />
+    <line stroke="white" stroke-width="4" stroke-linecap="round" x1="46" y1="24" x2="42" y2="24" />
+    <line stroke="white" stroke-width="4" stroke-linecap="round" x1="24" y1="46" x2="24" y2="42" />
+    <line stroke="white" stroke-width="4" stroke-linecap="round" x1="2" y1="24" x2="6" y2="24" />
+    <line stroke="white" stroke-width="4" stroke-linecap="round" x1="39.5" y1="8.5" x2="36.7" y2="11.3" />
+    <line stroke="white" stroke-width="4" stroke-linecap="round" x1="39.5" y1="39.5" x2="36.7" y2="36.7" />
+    <line stroke="white" stroke-width="4" stroke-linecap="round" x1="8.5" y1="8.5" x2="11.3" y2="11.3" />
+    <line stroke="white" stroke-width="4" stroke-linecap="round" x1="8.5" y1="39.5" x2="11.3" y2="36.7" />
+</svg>

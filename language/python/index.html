@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet" href="../style/base.css" />
+    <link rel="stylesheet" href="../style/side.css" />
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/code.css" />
+    <link rel="stylesheet" href="../style/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="../style/darkcode.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="../style/mobile.css" media="(max-width: 767px)">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script type="text/javascript">
+        hljs.highlightAll();
+        // hljs.initLineNumbersOnLoad();
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <aside>
+        <div id="header">
+            <img id="icon" src="img/pidoc.svg" />
+        </div>
+        <div id="list">
+            <ul>
+                <h3>개요</h3>
+                <li class="list-el"><a href="#d1-1">알아두기</a></li>
+                <li class="list-el"><a href="#d1-2">카카오톡봇이 무엇인가요?</a></li>
+                <li class="list-el"><a href="#d1-3">개발 준비</a></li>
+                <li class="list-el"><a href="#d1-4">response 함수</a></li>
+                <ul class="list-el">
+                    <p class="list-el"><a href="#d1-4">몰?루</a></p>
+                    <li class="list-el"><a href="#d1-1">알아두기</a></li>
+                    <li class="list-el"><a href="#d1-2">카카오톡봇이 무엇인가요?</a></li>
+                    <li class="list-el"><a href="#d1-3">개발 준비</a></li>
+                    <li class="list-el"><a href="#d1-4">response 함수</a></li>
+                    <li class="list-el"><a href="#d1-5">메시지 보내기</a></li>
+                </ul>
+            </ul>
+            <ul>
+                <h3>개요</h3>
+                <li class="list-el"><a href="#d1-1">알아두기</a></li>
+                <li class="list-el"><a href="#d1-2">카카오톡봇이 무엇인가요?</a></li>
+                <li class="list-el"><a href="#d1-3">개발 준비</a></li>
+                <li class="list-el"><a href="#d1-4">response 함수</a></li>
+                <ul class="list-el">
+                    <p class="list-el"><a href="#d1-4">몰?루</a></p>
+                    <li class="list-el"><a href="#d1-1">알아두기</a></li>
+                    <li class="list-el"><a href="#d1-2">카카오톡봇이 무엇인가요?</a></li>
+                    <li class="list-el"><a href="#d1-3">개발 준비</a></li>
+                    <li class="list-el"><a href="#d1-4">response 함수</a></li>
+                    <li class="list-el"><a href="#d1-5">메시지 보내기</a></li>
+                </ul>
+            </ul>
+            <ul>
+                <h3>개요</h3>
+                <li class="list-el"><a href="#d1-1">알아두기</a></li>
+                <li class="list-el"><a href="#d1-2">카카오톡봇이 무엇인가요?</a></li>
+                <li class="list-el"><a href="#d1-3">개발 준비</a></li>
+                <li class="list-el"><a href="#d1-4">response 함수</a></li>
+                <ul class="list-el">
+                    <p class="list-el"><a href="#d1-4">몰?루</a></p>
+                    <li class="list-el"><a href="#d1-1">알아두기</a></li>
+                    <li class="list-el"><a href="#d1-2">카카오톡봇이 무엇인가요?</a></li>
+                    <li class="list-el"><a href="#d1-3">개발 준비</a></li>
+                    <li class="list-el"><a href="#d1-4">response 함수</a></li>
+                    <li class="list-el"><a href="#d1-5">메시지 보내기</a></li>
+                </ul>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <section id="summary">
+            <div class="con" id="d1-1">
+                <h1>Title</h1>
+                <article>
+                    <p>카카오톡봇 개발 전 꼭 알아두어야 할 몇 가지 사항이 있습니다!</p>
+                </article>
+                <article>
+                    <ul>
+                        <li><strong>Java와 JavaScript는 서로 다른 언어입니다!</strong> 이 말은 JavaScript를 "Java"라고 줄여서 부르지 않는다는 것이죠. 차라리 <strong>"JS"</strong>라고 부르기로 합시다.</li>
+                        <li>카카오톡봇 개발에 사용되는 JS는 웹 개발에 사용되는 JS가 아니라 <strong>Rhino라는 JS구현 엔진</strong>입니다. JS의 여러 최신 문법/기능이 빠지긴 했어도 <strong>Java클래스를 사용할 수 있</strong>다는 장점이 있죠!</li>
+                        <li>카카오톡봇을 작동시키기 위해서는 기기의 운영체제가 <strong>Android OS</strong>, 그 중에서도 <strong>버전 5.0(롤리팝) 이상</strong>이어야 해요.</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="con" id="d1-2">
+                <h1>카카오톡봇이 무엇인가요?</h1>
+                <article>
+                    <p>카카오톡봇은 <strong>카카오톡 상단바 알림을 읽고, 자동으로 응답하는 자동응답 봇</strong>이에요. 이걸 개발하기 위해서는 
+                        <a href="https://play.google.com/store/apps/details?id=com.xfl.msgbot&hl=ko">메신저봇R</a>, 
+                        <a href="https://play.google.com/store/apps/details?id=com.darktornado.chatbot&hl=ko">채팅 자동응답 봇</a> 
+                    등의 앱이 쓰인답니다.</p>
+                </article>
+            </div>
+            <div class="con" id="d1-3">
+                <h1>개발 준비</h1>
+                <article>
+                    <ul class="small-list">
+                        <li class="small-list-el" id="d1-3-1">앱 설치</li>
+                        <li class="small-list-el" id="d1-3-2">부계정을 사용하신다고요?</li>
+                    </ul>
+                </article>
+                <div class="con small" id="d1-3-1">
+                    <h3>앱 설치</h3>
+                    <article>
+                        <p>카카오톡봇을 개발하려면, 일단 개발하고 구동시킬 앱이 필요하겠죠? 지금 이 편과 앞으로의 편 모두 <strong>메신저봇R</strong>을 기준으로 할게요.</p>
+                    </article>
+                    <article>
+                        <ul>
+                            <li>우선, Google Play에서 
+                                <strong><a href="https://play.google.com/store/apps/details?id=com.xfl.msgbot&hl=ko">메신저봇R</a></strong>
+                            을 설치해주세요.</li>
+                            <li class="alert">안드로이드 버전이 7.0(누가) 미만일 경우 
+                                <strong><a href="https://play.google.com/store/apps/details?id=com.google.android.wearable.app&hl=ko">Wear OS by Google</a></strong>
+                            를 추가로 설치해야 해요. (설치만 하면 된답니다. 이 앱에 대해서는 추가로 설정해야할 것이 없어요!)</li>
+                            <li>메신저봇R 최초 실행 시 <strong>데이터 폴더</strong>창이 나와요. 앞으로 자신이 개발할 봇의 소스코드를 어디에 저장할 것인지 지정하는 것이니 저장할 폴더를 지정하시면 됩니다.</li>
+                            <li>드디어 메신저봇R의 메인 화면을 구경할 수 있게 되었네요! 자신의 첫 봇을 만들기 위해 우측 하단에 있는 스크립트 추가 버튼을 클릭해봅시다.</li>
+                            <li><strong>새 봇</strong> 창에 자신의 봇 이름을 입력하고 <strong>확인</strong>을 누르세요.</li>
+                            <li>이제 자신의 봇이 어떻게 작동될 것인지를 코딩할 스크립트 파일이 생성되었습니다! 생성된 스크립트를 클릭한 다음 연필 버튼을 클릭하면 소스코드를 작성할 수 있습니다.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="con small" id="d1-3-2">
+                    <h3>부계정을 사용하신다고요?</h3>
+                    <article>
+                        <p>부계정을 사용할건데 별도로 작업해야할 것이 있냐고요? 음... 모른다는 뜻이 아닙니다.</p>
+                    </article>
+                    <article>
+                        <ul>
+                            <li>삼성 듀얼 메신저 기능을 사용하신다면, <strong>봇 전용 계정인 아닌 계정의 카카오톡 알림</strong>을 비활성화해야 합니다. 그러지 않으면 봇 전용 계정과 자신의 주 계정 모두가 봇으로서 작동될 수 있어요.</li>
+                            <li>복제 앱을 사용하신다고요? 그러면 <strong>메신저봇R</strong> &gt; <strong>공용 설정</strong> &gt; <strong>알림을 읽을 패키지명</strong>에서 봇으로 사용할 메신저앱의 패키지명을 입력하세요.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+            <div class="con" id="d1-4">
+                <h1>response 함수</h1>
+                <article>
+                    <p>처음 스크립트를 생성하면, 아래처럼 코드가 이미 작성되어 있을 거예요.</p>
+                </article>
+                <article>
+                    <pre><code class="language-javascript">const scriptName = "script";
+/**
+* (string) room
+* (string) sender
+* (boolean) isGroupChat
+* (void) replier.reply(message)
+* (boolean) replier.reply(room, message, hideErrorToast = false) // 전송 성공시 true, 실패시 false 반환
+* (string) imageDB.getProfileBase64()
+* (string) packageName
+*/
+function response (room, msg, sender, isGroupChat, replier, imageDB, packageName) {
+
+}
+
+//아래 4개의 메소드는 액티비티 화면을 수정할때 사용됩니다.
+function onCreate (savedInstanceState, activity) {
+var textView = new android.widget.TextView(activity);
+textView.setText('Hello, World!');
+textView.setTextColor(android.graphics.Color.DKGRAY);
+activity.setContentView(textView);
+}
+
+function onStart (activity) {  }
+
+function onResume (activity) {  }
+
+function onPause (activity) {  }
+
+function onStop (activity) {  }</code></pre>
+                </article>
+                <article>
+                    <p>복잡해 보이죠? 하지만 카카오톡봇 제작에 가장 많이 쓰이는 것은 이것 하나입니다.</p>
+                </article>
+                <article>
+                    <pre><code class="language-javascript">function response (room, msg, sender, isGroupChat, replier, imageDB, packageName) {
+
+}</code></pre>
+                </article>
+                <article>
+                    <p>이것을 <strong>response 함수</strong>라고 부릅니다! 이 함수는 메시지를 수신할 때마다 작동됩니다.</p>
+                    <p>저 소괄호 안에 든 
+                        <code data-b>room, msg, sender, isGroupChat, replier, imageDB, packageName</code>
+                    를 response 함수의 <strong>매개변수</strong>라고 부를겁니다.</p>
+                </article>
+                <article>
+                    <p>그럼 response 함수의 매개변수 각각의 기능을 살펴볼까요?</p>
+                </article>
+                <article class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>자료형</th>
+                                <th>설명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code data-b>String</code></td>
+                                <td>
+                                    <code data-b>room</code><br><br>
+                                    메시지가 발신된 채팅방의 이름을 나타냅니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code data-b>String</code></td>
+                                <td>
+                                    <code data-b>msg</code><br><br>
+                                    발신된 메시지의 내용을 나타냅니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code data-b>String</code></td>
+                                <td>
+                                    <code data-b>sender</code><br><br>
+                                    메시지를 발신한 유저의 이름을 나타냅니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code data-b>Boolean</code></td>
+                                <td>
+                                    <code data-b>isGroupChat</code><br><br>
+                                    메시지가 발신된 방이 그룹 채팅방(3인 이상)인지의 여부를 나타냅니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code data-b>Object</code></td>
+                                <td>
+                                    <code data-b>replier</code><br><br>
+                                    응답 기능, 세션 등을 가지고 있는 객체입니다. (아래 참고)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code data-b>Object</code></td>
+                                <td>
+                                    <code data-b>imageDB</code><br><br>
+                                    메시지를 발신한 유저의 프로필 이미지의 정보를 담은 객체입니다. (아래 참고)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code data-b>String</code></td>
+                                <td>
+                                    <code data-b>packageName</code><br><br>
+                                    메시지가 발신된 앱의 패키지명을 반환합니다. (카카오톡의 경우: <code data-b>com.kakao.talk</code>)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article>
+                    <ul class="small-list">
+                        <li class="small-list-el" id="d1-4-1">replier</li>
+                        <li class="small-list-el" id="d1-4-2">imageDB</li>
+                    </ul>
+                </article>
+                <div class="con small" id="d1-4-1">
+                    <h3>replier</h3>
+                    <article class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>자료형</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code data-b>void</code></td>
+                                    <td>
+                                        <code data-b>reply(<i>msg: String</i>)</code><br><br>
+                                        메시지가 발신된 방에 메시지를 보냅니다.<br><br>
+                                        <code data-b>msg</code>: 보낼 메시지의 내용
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code data-b>Boolean</code></td>
+                                    <td>
+                                        <code data-b>reply(<i>room: String, msg: String, hideToast?: Boolean= false</i>)</code><br><br>
+                                        특정 방에 메시지를 보냅니다.<br>
+                                        메시지를 보낼 방에 대한 세션의 존재 여부를 반환합니다.<br><br>
+                                        <code data-b>room</code>: 메시지를 보낼 방 이름<br>
+                                        <code data-b>msg</code>: 보낼 메시지의 내용<br>
+                                        <code data-b>hideToast?</code>: 메시지를 보낼 방의 세션 존재 여부를 토스트 메시지로 출력할 것인지의 여부
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code data-b>void</code></td>
+                                    <td>
+                                        <code data-b>replyDelayed(<i>msg: String, delay: Number</i>)</code><br><br>
+                                        메시지가 발신된 방에 지정한 시간이 지난 후 메시지를 보냅니다.<br><br>
+                                        <code data-b>msg</code>: 보낼 메시지의 내용<br>
+                                        <code data-b>delay</code>: 메시지 발신을 지연할 시간 (밀리초)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code data-b>Boolean</code></td>
+                                    <td>
+                                        <code data-b>replyDelayed(<i>room: String, msg: String, delay: Number, hideToast?: Boolean= false</i>)</code><br><br>
+                                        특정 방에 지정한 시간이 지난 후 메시지를 보냅니다.<br>
+                                        메시지를 보낼 방에 대한 세션의 존재 여부를 반환합니다.<br><br>
+                                        <code data-b>room</code>: 메시지를 보낼 방 이름<br>
+                                        <code data-b>msg</code>: 보낼 메시지의 내용<br>
+                                        <code data-b>delay</code>: 메시지 발신을 지연할 시간 (밀리초)<br>
+                                        <code data-b>hideToast?</code>: 메시지를 보낼 방의 세션 존재 여부를 토스트 메시지로 출력할 것인지의 여부
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code data-b>Boolean</code></td>
+                                    <td>
+                                        <code data-b>markAsRead(<i>room?: String, packageName?: String</i>)</code><br><br>
+                                        채팅방의 메시지를 읽음 처리합니다.<br>
+                                        방에 대한 알림 읽기 세션을 찾을 수 있는지의 여부를 반환합니다.<br><br>
+                                        <code data-b>room?</code>: 메시지를 읽음 처리할 채팅방의 이름 (인자가 없을 시 메시지가 온 채팅방의 메시지를 읽음 처리)<br>
+                                        <code data-b>packageName?</code>: 메시지를 읽음 처리할 메신저 앱의 패키지명
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </div>
+                <div class="con small" id="d1-4-2">
+                    <h3>imageDB</h3>
+                    <article class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>자료형</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code data-b>String</code></td>
+                                    <td>
+                                        <code data-b>getProfileBase64()</code><br>
+                                        <code data-b>getProfileImage()</code><br><br>
+                                        프로필 이미지를 Base64로 인코딩한 값을 반환합니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code data-b>android.graphics.Bitmap</code></td>
+                                    <td>
+                                        <code data-b>getProfileBitmap()</code><br><br>
+                                        프로필 이미지를 Bitmap으로 반환합니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code data-b>String</code></td>
+                                    <td>
+                                        <code data-b>getImageBase64()</code><br>
+                                        <code data-b>getImage()</code><br><br>
+                                        채팅 상에서 감지된 이미지를 Base64로 인코딩한 값을 반환합니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code data-b>String</code></td>
+                                    <td>
+                                        <code data-b>getImageBitmap()</code><br><br>
+                                        채팅 상에서 감지된 이미지를 Bitmap으로 반환합니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code data-b>String</code></td>
+                                    <td>
+                                        <code data-b>getImageHash()</code><br><br>
+                                        채팅 상에서 감지된 이미지의 해시 값을 반환합니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code data-b>String</code></td>
+                                    <td>
+                                        <code data-b>getImageMD5()</code><br><br>
+                                        채팅 상에서 감지된 이미지를 MD5로 인코딩한 값을 반환합니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code data-b>String</code></td>
+                                    <td>
+                                        <code data-b>getImageSHA()</code><br><br>
+                                        채팅 상에서 감지된 이미지를 SHA로 인코딩한 값을 반환합니다.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </div>
+                <article>
+                    <p>유용한 매개변수들이죠? 다만, response 함수의 매개변수를 사용할 때 유의해야 할 점이 있어요. <mark>response 함수의 매개변수는 반드시 response 함수 안에서만 사용을 해야 한답니다!</mark></p>
+                </article>
+            </div>
+            <div class="con" id="d1-5">
+                <h1>메시지 보내기</h1>
+                <article>
+                    <p>이제 슬슬 자동응답봇이라면 기본적으로 갖추어야 할 기본적인 기능을 알아봐야겠죠? 이번에는 <strong>카카오톡봇을 이용하여 메시지를 보내는 방법</strong>을 알아볼 겁니다!</p>
+                    <p>메시지를 보내는 방법은 크게 두 가지가 있습니다. 첫 번째 방법부터 알아볼까요?</p>
+                </article>
+                <article>
+                    <pre><code class="language-javascript">function response (room, msg, sender, isGroupChat, replier, imageDB, packageName) {
+replier.reply('Hello World!');
+// 또는
+replier.reply('방 이름', 'Hello World!');
+}</code></pre>
+                </article>
+                <article>
+                    <p><a href="d1-4" class="anchor">response 함수</a> 편에서 본 <code data-b>replier</code>객체가 보이죠? 2번째 줄 처럼 보낼 메시지만 입력하면, <strong>메시지가 발신된 방으로</strong> 메시지를 보냅니다.</p>
+                    <p>그리고 4번째 줄처럼 메시지를 보낼 방 이름도 입력하면, <storng>입력된 방으로</storng> 메시지를 보냅니다.</p>
+                </article>
+                <article>
+                    <p>하지만 이전 편에서 언급했듯이, <code data-b>replier</code>객체는 response 함수 안에서만 사용할 수 있습니다. response 함수 밖에서 메시지를 보내는 코드를 사용하려면 어떻게 해야 할까요? 이러한 문제를 해결할 수 있는 방법이 두 번째 방법입니다!</p>
+                </article>
+                <article>
+                    <pre><code class="language-javascript">Api.replyRoom('방 이름', 'Hello World!');</code></pre>
+                </article>
+                <article>
+                    <p>이렇게 메시지를 보낼 방의 이름과 보낼 메시지를 입력하면 됩니다. <code data-b>Api.replyRoom()</code>은 response 함수의 안쪽뿐만 아니라 바깥쪽에서도 사용할 수 있죠!</p>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
