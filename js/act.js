@@ -23,6 +23,12 @@ document.getElementById('sidebtn').addEventListener('click', () => {
 
 document.getElementById('sidebtn').addEventListener('blur', () => { if(list_el_is_clicked) document.querySelectorAll('aside > ul').forEach(e => { e.style.display = 'none'; }); });
 
+document.querySelector('main').addEventListener('click', () => {
+    if(document.querySelector('aside > ul').style.display === 'block') {
+        document.querySelectorAll('aside > ul').forEach(e => { e.style.display = 'none'; });
+    }
+});
+
 document.querySelectorAll('.list-el').forEach(e => {
     e.addEventListener('click', (event) => {
         list_el_is_clicked = true;
