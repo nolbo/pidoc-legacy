@@ -52,7 +52,7 @@ aside {
     margin: 0;
     width: 100vw;
     height: auto;
-    max-height: 85vh;
+    max-height: 75vh;
     overflow: auto;
     background-color: var(--background-color);
     border-bottom: 2px solid var(--box-color);
