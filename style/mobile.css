@@ -4,7 +4,7 @@
     --sidebtn-size: 1rem;
     --content-padding: 1.75rem;
     --sidebar-height: calc(var(--content-padding) * 2 + var(--sidebtn-size));
-    --content-padding-top: calc(var(--sidebar-height) + var(--content-padding)) !important;
+    --content-padding-top: 5.75rem !important;
     --article-padding: 1rem !important;
 }
 
