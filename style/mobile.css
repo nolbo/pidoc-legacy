@@ -67,6 +67,7 @@ button#sidebtn {
     background-image: url(../img/list_icon.svg);
     background-size: var(--sidebtn-size) var(--sidebtn-size);
     background-repeat: no-repeat;
+    background-position: calc(var(--content-padding) + var(--sidebtn-size) / 2) center;
     width: 100vw;
     height: var(--sidebar-height);
     border: none;
