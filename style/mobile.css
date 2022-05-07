@@ -63,18 +63,17 @@ aside {
 
 button#sidebtn {
     display: block;
-    background-color: transparent;
+    background-color: var(--background-color);
     background-image: url(../img/list_icon.svg);
     background-size: var(--sidebtn-size) var(--sidebtn-size);
     background-repeat: no-repeat;
     width: 100vw;
-    height: var(--sidebtn-size);
+    height: var(--sidebar-height);
     border: none;
     position: fixed;
     top: 0;
     left: 0;
     padding: var(--content-padding);
-    box-sizing: content-box;
 }
 
 aside > ul {
