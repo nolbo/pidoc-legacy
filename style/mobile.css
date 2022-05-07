@@ -71,7 +71,7 @@ button#sidebtn {
     width: 100vw;
     height: var(--sidebar-height);
     border: none;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid red;
     position: fixed;
     top: 0;
     left: 0;
