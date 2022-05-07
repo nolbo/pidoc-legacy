@@ -4,7 +4,7 @@
     --sidebtn-size: 1rem;
     --content-padding: 1.75rem;
     --sidebar-height: calc(var(--content-padding) * 2 + var(--sidebtn-size));
-    --content-padding-top: 7.875rem !important;
+    --content-padding-top: 8rem !important;
     --article-padding: 1rem !important;
 }
 
@@ -78,14 +78,14 @@ button#sidebtn {
     padding: var(--content-padding);
 }
 
-aside > ul {
-    display: none;
-    margin-top: 2rem;
-}
-
 aside > ul:first-child {
     margin-top: var(--sidebar-height);
     background-color: red;
+}
+
+aside > ul {
+    display: none;
+    margin-top: 2rem;
 }
 
 aside h3 {
