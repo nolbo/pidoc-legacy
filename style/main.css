@@ -42,7 +42,7 @@ main h1 {
 
 main a {
     font-weight: bold;
-    color: var(--text-color);
+    color: inherit;
     text-decoration: underline;
     text-decoration-color: var(--color-green);
     text-decoration-thickness: 4px;

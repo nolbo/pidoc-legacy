@@ -39,6 +39,7 @@ div#header {
 img#icon {
     width: 3rem;
     height: auto;
+    cursor: pointer;
     transition-property: filter;
     transition-duration: .5s;
 }

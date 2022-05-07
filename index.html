@@ -27,15 +27,14 @@
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/code.css" />
     <link rel="stylesheet" href="style/custom.css" />
-    <link rel="stylesheet" href="style/mobile.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="style/mobile.css" media="(max-width: 1024px)">
     <link rel="stylesheet" href="style/dark.css" media="(prefers-color-scheme: dark)" class="media_dark">
     <link rel="stylesheet" href="style/darkcode.css" media="(prefers-color-scheme: dark)" class="media_dark">
     <link rel="favicon"    href="img/pidoc_square.svg" />
     <link rel="icon"       href="img/pidoc_square.svg" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
     <script type="text/javascript">
         hljs.highlightAll();
-        // hljs.initLineNumbersOnLoad();
     </script>
     <title>Pidoc</title>
 </head>
@@ -45,14 +44,14 @@
         <button id="theme" type="button"></button>
     </header>
     <main>
-        <section id="mainpg">
-            <div class="con" id="d1-1">
+        <section>
+            <div class="con" id="dd1-1">
                 <h1>Hello World!</h1>
                 <article>
                     <p><strong>Pidoc</strong>에 잘 오셨습니다! Pidoc는 프로그래밍에 관한 여러 문서를 모아놓은 곳입니다. <a href="https://github.com/nolbo/pidoc" target="_blank">Github 레포지토리</a>를 통해 누구나 함께 문서를 추가/수정할 수 있으니 참고하세요!</p>
                 </article>
             </div>
-            <div class="con" id="d1-2">
+            <div class="con" id="dd1-2">
                 <h1>언어</h1>
                 <article>
                     <p>JS, Python과 같은 언어를 다루는 문서에요. 왜 굳이 프로그래밍 언어라고 해놓지 않았냐고요? HTML이나 CSS는 섭섭할 수 있잖아요.</p>
@@ -60,27 +59,27 @@
                 <article>
                     <div data-custom-flex>
                         <span data-custom-docbox class="language js">.JS</span>
-                        <span data-custom-docbox class="language py">.PY</span>
+                        <span data-custom-docbox class="language python">.PY</span>
                         <span data-custom-docbox class="language java">.JAVA</span>
-                        <span data-custom-docbox class="language kt">.KT</span>
+                        <span data-custom-docbox class="language kotlin">.KT</span>
                         <span data-custom-docbox class="language c">.C</span>
                         <span data-custom-docbox class="language cpp">.CPP</span>
-                        <span data-custom-docbox class="language cs">.CS</span>
+                        <span data-custom-docbox class="language csharp">.CS</span>
                     </div>
                 </article>
             </div>
-            <div class="con" id="d1-3">
+            <div class="con" id="dd1-3">
                 <h1>프레임워크 / 라이브러리</h1>
                 <article>
                     <p>개발을 하기 위해 다양한 프레임워크나 라이브러리를 사용할 때가 있죠. 이러한 것들을 위한 문서에요.</p>
                 </article>
-                <div class="con small" id="d1-3-1">
+                <div class="con small" id="dd1-3-1">
                     <h1>웹 (Web)</h1>
                     <article>
                         <p>웹 개발에 쓰이는 라이브러리나 프레임워크에 관한 문서에요.</p>
                     </article>
                 </div>
-                <div class="con small" id="d1-3-2">
+                <div class="con small" id="dd1-3-2">
                     <h1>앱 (App)</h1>
                     <article>
                         <p>앱 개발에 쓰이는 라이브러리나 프레임워크에 관한 문서에요.</p>
@@ -90,7 +89,9 @@
         </section>
     </main>
     <aside>
-        <button id="sidebtn" type="button"></button>
+        <div id="msideview">
+            <button id="sidebtn" type="button"></button>
+        </div>
         <ul>
             <h3>메인 페이지</h3>
             <li class="list-el" id="d1-1">Hello World!</li>
@@ -105,4 +106,5 @@
     </aside>
 </body>
 <script type="text/javascript" src="js/act.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 </html>

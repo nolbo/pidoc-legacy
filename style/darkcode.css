@@ -45,7 +45,7 @@ pre code.hljs::-webkit-scrollbar-thumb {
 }
 
 .hljs-comment {
-    color:#555;
+    color:#777;
 }
 
 .hljs-tag {
@@ -74,7 +74,7 @@ pre code.hljs::-webkit-scrollbar-thumb {
 }
 
 .hljs-deletion, .hljs-quote, .hljs-selector-class, .hljs-selector-id, .hljs-template-tag, .hljs-type {
-    color: #800;
+    color: #ddd;
 }
 
 .hljs-section, .hljs-title.function_ {
@@ -90,7 +90,7 @@ pre code.hljs::-webkit-scrollbar-thumb {
 }
 
 .hljs-link, .hljs-operator, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-symbol, .hljs-template-variable, .hljs-variable {
-    color:#bc6060;
+    color:#ffbb2a;
 }
 
 .hljs-literal {

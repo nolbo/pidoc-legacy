@@ -1,6 +1,10 @@
 const con_padding = Number(getComputedStyle(document.documentElement).getPropertyValue('--content-padding-top').replace(/[^0-9.]/g, '')) * 16;
 let list_el_is_clicked = false;
 
+document.getElementById('icon').addEventListener('click', () => {
+    location.href = '/';
+});
+
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
     changeTheme('dark');
 });
@@ -37,8 +41,8 @@ document.querySelectorAll('.list-el').forEach(e => {
         if(matchMedia('(hover: none) and (pointer: coarse)').matches) {
             document.querySelectorAll('aside > ul').forEach(e => { e.style.display = 'none'; });
         }
-        const pos = document.querySelector(`div.con#${e.id}`).getBoundingClientRect();
-        window.scrollTo(0, window.pageYOffset + pos.y - con_padding + ((e.id.split('-').length === 3) ? 4 : 0));
+        const pos = document.querySelector(`div.con#d${e.id}`).getBoundingClientRect();
+        window.scrollTo(0, window.pageYOffset + pos.y - con_padding + 4);
         list_el_is_clicked = false;
     });
 });
@@ -57,7 +61,7 @@ function onScroll() {
             document.querySelector('.list-el[data-selected]').removeAttribute('data-selected');
         }
         let cons = [].slice.call(document.querySelectorAll('div.con')).filter(e => e.getBoundingClientRect().y <= con_padding);
-        document.querySelector(`.list-el#${cons[cons.length - 1].id}`).setAttribute('data-selected', '');
+        document.querySelector(`.list-el#${cons[cons.length - 1].id.slice(1)}`).setAttribute('data-selected', '');
     }
 }
 

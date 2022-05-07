@@ -51,7 +51,7 @@
 }
 
 html {
-    height: fit-content;
+    height: auto;
     background-color: var(--background-color);
     scroll-behavior: smooth;
     transition-property: background-color, color;

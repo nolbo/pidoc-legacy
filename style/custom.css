@@ -24,7 +24,7 @@ span[data-custom-docbox].language.js {
     color: black;
 }
 
-span[data-custom-docbox].language.py {
+span[data-custom-docbox].language.python {
     background-color: rgb(68, 96, 255);
     border-color: rgb(68, 96, 255);
     color: rgb(255, 221, 0);
@@ -36,7 +36,7 @@ span[data-custom-docbox].language.java {
     color: white;
 }
 
-span[data-custom-docbox].language.kt {
+span[data-custom-docbox].language.kotlin {
     border: 4px solid transparent;
     background-image: linear-gradient(transparent, transparent), linear-gradient(135deg, rgb(255, 128, 0), rgb(37, 128, 255), rgb(88, 88, 255));
     background-origin: border-box;
@@ -56,7 +56,7 @@ span[data-custom-docbox].language.cpp {
     color: white;
 }
 
-span[data-custom-docbox].language.cs {
+span[data-custom-docbox].language.csharp {
     background-color: rgb(105, 41, 208);
     border-color: rgb(105, 41, 208);
     color: white;

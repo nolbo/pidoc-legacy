@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Pidoc - JavaScript">
+    <meta name="keywords" content="pidoc, 파이독, 프로그래밍, 코딩, 카카오톡봇">
+    <meta name="description" content="Programming Docs for You">
+    <meta name="author" content="nolbo">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nolbo.github.io/pidoc/">
+    <meta property="og:title" content="Pidoc - JavaScript">
+    <meta property="og:image" content="img/grp.png">
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:description" content="Programming Docs for You">
+    <link rel="canonical" href="https://nolbo.github.io/pidoc/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet" href="../../style/base.css" />
+    <link rel="stylesheet" href="../../style/side.css" />
+    <link rel="stylesheet" href="../../style/main.css" />
+    <link rel="stylesheet" href="../../style/code.css" />
+    <link rel="stylesheet" href="../../style/custom.css" />
+    <link rel="stylesheet" href="../../style/mobile.css" media="(max-width: 1024px)">
+    <link rel="stylesheet" href="../../style/dark.css" media="(prefers-color-scheme: dark)" class="media_dark">
+    <link rel="stylesheet" href="../../style/darkcode.css" media="(prefers-color-scheme: dark)" class="media_dark">
+    <link rel="favicon"    href="../../img/pidoc_square.svg" />
+    <link rel="icon"       href="../../img/pidoc_square.svg" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script type="text/javascript">
+        hljs.highlightAll();
+    </script>
+    <title>Pidoc - JavaScript</title>
+</head>
+<body>
+    <header>
+        <img id="icon" src="../../img/pidoc.svg" alt="pidoc" />
+        <button id="theme" type="button"></button>
+    </header>
+    <main>
+        <section>
+            <div class="con" id="dd1-1">
+                <h1>자바스크립트?</h1>
+                <article>
+                    <p>반가워요! 자바스크립트에 대해 알고 싶으셔서 온 거죠? 자바스크립트는 프로그래밍 언어의 일종으로, 그 중에서도 <strong>스크립트 언어</strong>예요.</p>
+                </article>
+                <article>
+                    <p>자바스크립트(JavaScript; JS)는 <strong>1995년</strong>에 개발되어 지금까지 아주 폭넓게 사용되고 있어요. <strong>HTML, CSS</strong>와 함께 웹 프론트엔드를 구성하는 언어이지만 <strong>모바일 앱 개발, PC 프로그램 개발 그리고 데이터베이스</strong>에서도 쓰이죠!</p>
+                </article>
+                <article>
+                    <p>꽤 많은 사람들이 헷갈려하는 것이 있어요. 바로 <strong>"JS와 Java는 같은 언어야!"</strong> 라는 것이죠. 사실 JS와 Java는 <mark>분명히 다른 언어</mark>예요. 이름이 비슷하긴 하지만 이 두 언어는 <strong>다른 언어</strong>라는 것을 꼭 기억하세요!</p>
+                </article>
+            </div>
+            <div class="con" id="dd1-2">
+                <h1>문법</h1>
+                <article>
+                    <p>우리가 한국어를 하든 영어를 하든 그 언어에 대한 <strong>문법</strong>을 제대로 알아야 정상적으로 의사소통을 할 수 있죠. 이처럼 프로그래밍 언어도 저마다의 문법을 꼭 지켜줘야 정상적으로 실행할 수 있어요.</p>
+                    <p>이 문서에서는 문법을 크게 <strong>3가지</strong>로 나누어서 설명할 거예요.</p>
+                </article>
+                <article>
+                    <div class="con small" id="dd1-2-1">
+                        <h1>기본</h1>
+                        <article>
+                            <p>기본적으로, JS는 <strong>알파벳의 대소문자를 구분해요.</strong> 우리가 일상적으로 살 때는 'A나 a나 다를게 뭐가 있어?' 라고 하지만 컴퓨터는 이것도 명확히 구분한단 말이죠. 예제를 한번 볼까요?</p>
+                        </article>
+                        <article>
+                            <pre><code class="language-javascript">var apple;
+var Apple;</code></pre>
+                        </article>
+                        <article>
+                            <p>첫번째 줄은 <code data-b>apple</code>이라는 변수를 선언한 것이고, 두번째 줄은 <code data-b>Apple</code>이라는 변수를 선언한 거예요. (아직 변수에 대해 다루진 않았지만 '변수를 선언하는 행위' 그 자체로만 보자고요!) 
+                            두 번수의 차이는 변수 이름의 앞글자가 대소문자인가 아닌가이죠. <strong>이러한 차이 때문에 두 변수는 다른 변수인 거라는 거예요!</strong></p>
+                        </article>
+                        <article>
+                            <p>다음 기본 문법은 <strong>세미콜론(;)</strong>에 관한 것이에요. JS에서 세미콜론을 붙이고 안붙이고는 개인의 자유이지만, 꼭 세미콜론을 붙여야 할 때도 있어요.</p>
+                        </article>
+                        <article>
+                            <pre><code class="language-javascript">console.log('Hello,'); console.log('World!');</code></pre>
+                        </article>
+                        <article>
+                            <p>이렇게 <strong>한 줄에 여러 명령문이 있을 경우</strong> 명령문을 명확히 구분해주기 위해 명령문 끝에 꼭 세미콜론을 붙여줘야 해요.</p>
+                            <p>이 외에는 위에서 말한 것처럼 세미콜론을 붙이지 않아도 되지만, <strong>혹시 모를 버그를 예방하기 위해</strong> 명령문 끝에 세미콜론을 붙여주는 게 좋답니다.</p>
+                        </article>
+                    </div>
+                </article>
+                <article>
+                    <div class="con small" id="dd1-2-2">
+                        <h1>짝</h1>
+                        <article>
+                            <p>문법에 대해 알아보고 있는데 갑자기 짝이라니, 무슨 의미일까요? 여기에서 말하는 짝은 <strong>열는 문자가 오면 닫는 문자도 와야 한다</strong>는 거예요. 이것만 보고서는 가늠이 안되죠?</p>
+                        </article>
+                        <article>
+                            <pre><code class="language-javascript">"Hello, World!"
+'Bye, World!'
+[1, 2, 3]
+({)} // 오류 발생!</code></pre>
+                        </article>
+                        <article>
+                            <p>우선 1, 2번째 줄을 볼까요? 처음에 각각 <code data-b>"</code>, <code data-b>'</code>(열는 문자)가 왔죠. 그 다음 각각 <code data-b>"</code>, <code data-b>'</code>(닫는 문자)로 끝을 맺어줘야 해요.</p>
+                            <p>3번째 줄을 보면 더 쉽게 이해가 될 거예요. 처음에 <code data-b>[</code>(열는 문자)가 왔으니 후에 반드시 <code data-b>]</code>(닫는 문자)로 닫아줘야 한다는 것이죠.</p>
+                        </article>
+                        <article>
+                            <p>하지만 마지막 줄은 오류가 발생합니다. 열는 문자와 닫는 문자 모두 잘 입력한 것 같은데 왜 그럴까요? 처음에 <code data-b>(</code>, <code data-b>{</code> 순으로 열어주었으니 닫을 땐 <code data-b>}</code>, <code data-b>)</code> 순으로 닫아줘야 하는데 닫는 순서가 바뀌었기 때문이죠!</p>
+                            <p>열는 문자가 먼저 왔다는 것은 그 다음 올 내용들을 <strong>감싸주겠다</strong>는 의미예요. 그러므로 <code data-b>({})</code>가 문법에 맞는 입력이 된답니다.</p>
+                        </article>
+                    </div>
+                </article>
+                <article>
+                    <div class="con small" id="dd1-2-3">
+                        <h1>주석</h1>
+                        <article>
+                            <p>프로그래밍 문서라고 해서 왔더니 이제 금속도 나오네요. 사실 여기에서 말하는 주석은 금속이 아니라 <strong>Comment</strong>를 말해요. '논평' 등의 의미를 가지고 있죠. 
+                            <strong>주석은 코드의 실행에 전혀 영향을 미치지 않아요.</strong> 쉽게 말해 주석은 <strong>실행되지 않는 것</strong>이라는 거죠.</p>
+                        </article>
+                        <article>
+                            <p>그럼 도대체 이 주석이란 친구는 어디에 쓰이는 걸까요?</p>
+                        </article>
+                        <article>
+                            <pre><code class="language-javascript">console.log("Hello, World!"); // Hello, World! 를 출력하는 코드
+Number("1234");
+/* 
+위 코드는 이러한 역할을 한다:
+문자열 "1234"를 숫자형으로 변환
+*/</code></pre>
+                        </article>
+                        <article>
+                            <p>이렇게 보통 소스코드에 대한 설명 등을 기록할 때 쓰여요. 중요성을 느끼지 못할 수도 있겠지만, 코드의 양이 많아질수록 특정 코드가 어떤 역할을 하는지 파악하기 힘들기 때문에 주석이 중요한 존재가 되는 거예요.</p>
+                        </article>
+                        <article>
+                            <p>위에 두개의 주석이 있는데 둘의 차이점은 무엇일까요? <code data-b>//</code>는 한줄의 주석만 달 때, <code data-b>/* */</code>는 주석을 여러줄 달 때 쓰인답니다!</p>
+                        </article>
+                    </div>
+                </article>
+            </div>
+            <div class="con" id="dd1-3">
+                <h1>변수와 상수</h1>
+                <article>
+                    <p>코드를 작성하다 보면 같은 값이 여러 번 필요해질 때가 있어요. 예를 들자면 아래와 같아요.</p>
+                </article>
+                <article>
+                    <pre><code class="language-javascript">console.log("Hello");
+"Hello".split('');
+"World".replace("W", "Hello");</code></pre>
+                </article>
+                <article>
+                    <p>위의 코드에서 <code data-b>"Hello"</code>가 여러 번 쓰이죠? 물론 위와 같은 코드는 꽤 귀여운 수준이지만, 코드를 작성하다보면 같은 값이 매우 많은 곳에서 쓰일 때가 있어요. 그럴 때마다 그 값을 직접 입력하려면 꽤 비효율적인 방법이 될 거예요.</p>
+                    <p>이러한 문제를 해결해는 것이 바로 <strong>변수와 상수</strong>예요!</p>
+                </article>
+                <article>
+                    <p>변수와 상수에 대해 알아보기 전에 변수나 상수의 이름을 명명할 때 지켜야 하는 규칙을 알아볼까요?</p>
+                </article>
+                <article>
+                    <ul>
+                        <li>변수/상수 이름의 첫 글자는 <strong>문자, 언더바(밑줄; <code data-b>_</code>), 달러 기호(<code data-b>$</code>)만</strong> 올 수 있어요.</li>
+                        <li>첫 글자 이후는 <strong>숫자(<code data-b>0-9</code>)도</strong> 올 수 있어요.</li>
+                        <li>변수/상수 이름에서 <strong>대소문자를 매우 엄격하게 구분해요.</strong></li>
+                    </ul>
+                </article>
+                <article>
+                    <div class="con small" id="dd1-3-1">
+                        <h1>변수</h1>
+                        <article>
+                            <p>변수를 사용하려면 일단 변수를 <strong>선언</strong>해야 해요. 변수를 선언할 땐 <code data-b>var</code> 또는 <code data-b>let</code>이라는 키워드를 사용하는데, 아래와 같이 써요.</p>
+                        </article>
+                        <article>
+                            <pre><code class="language-javascript">var num;
+var str = 'JavaScript';
+let arr;
+let bool = true;</code></pre>
+                        </article>
+                        <article>
+                            <p>1, 3번째 줄과 2, 4번째 줄에 차이가 있죠? 우선 공통점은 <code data-b>var [변수이름]</code> 또는  <code data-b>let [변수이름]</code>으로 변수를 <strong>선언하였다</strong>는 거예요. 
+                            그런데 2, 4번째 줄에서는 <code data-b>&#61; [값]</code>까지 입력되어 있네요. 이와 같이 변수에 값을 저장하는 것을 '변수에다 값을 <strong>할당한다</strong>' 라고 해요.</p>
+                        </article>
+                        <article>
+                            <p>2, 4번째 줄에 선언된 변수는 할당해준 값을 가진다는 것은 알겠는데 1, 3번째 줄의 변수처럼 할당된 값이 없는 변수는 어떤 값을 가지는지 모르겠죠? 선언은 되었지만 할당이 되지 않은 변수는 <code data-b>undefined</code>라는 값을 가져요.</p>
+                            <p>'그러면 선언만 하고 할당은 하지 않은 변수에다 값을 할당하려면 어떻게 해야해요?'</p>
+                            <p>그럴 땐 아래와 같이 한답니다!</p>
+                        </article>
+                        <article>
+                            <pre><code class="language-javascript">var num;
+num = 141;
+let arr;
+arr = [1, 'JS', false];</code></pre>
+                        </article>
+                        <article>
+                            <p><code data-b>[변수이름] = [값]</code>의 형식으로 선언된 변수에다 값을 할당해줄 수 있어요. 이미 값을 할당해준 변수의 값을 이 형식으로 다시 할당할 수 있는데 이때는 <strong>재할당</strong>으로 불리겠죠?</p>
+                        </article>
+                        <article>
+                            <p>'재할당이 있듯이 재선언도 있을까요?'</p>
+                            <p>당연하죠! <code data-b>var [변수이름] = [값]</code>처럼 재선언을 할 수 있어요. 그런데 <code data-b>let</code>은 왜 없을까요? <mark><code data-b>let</code>으로 선언한 변수는 재선언이 불가능하기 때문이랍니다!</mark></p>
+                            <p>이 외에도 <code data-b>var</code>과 <code data-b>let</code>의 차이점이 있지만 자세한 건 다음에 알아보도록 해요.</p>
+                        </article>
+                        <article>
+                            <p>마지막으로, 변수에 저장된 값을 사용하는 방법을 알아볼까요?</p>
+                        </article>
+                        <article>
+                            <pre><code class="language-javascript">var str = 'JavaScript';
+console.log(str); // JavaScript 출력</code></pre>
+                        </article>
+                        <article>
+                            <p>이처럼 변수에 저장된 값을 사용할 땐 변수명을 입력하기만 하면 됩니다! 그리고 변수에 저장된 값을 사용하는 것을 <strong>참조</strong>라고 합니다.</p>
+                        </article>
+                    </div>
+                </article>
+                <article>
+                    <div class="con small" id="dd1-3-2">
+                        <h1>상수</h1>
+                        <article>
+                            <p>이름에서 알 수 있듯이 <strong>상수</strong>는 값의 변경이 <strong>불가능</strong>해요. 이 말은 즉, <strong>재할당과 재선언이 불가능하다</strong>는 것이죠! 이를 시도하다간 에러를 맛보게 될 거예요.</p>
+                        </article>
+                        <article>
+                            <p>그럼 상수는 어떻게 선언할까요? <code data-b>const</code>라는 키워드를 사용하는데 사용법은 변수 선언과 별반 다르지 않아요.</p>
+                        </article>
+                        <article>
+                            <pre><code class="language-javascript">const PI = 3.141592;
+const SQRT_2; // 에러 발생!</code></pre>
+                        </article>
+                        <article>
+                            <p>참 쉽죠? 그런데 2번째 줄에선 왜 에러가 발생하는 걸까요? 위에서 말했듯이 상수는 재선언과 재할당이 불가능하기 때문에 <mark>선언과 할당을 반드시 동시에 해주어야 해요!</mark></p>
+                        </article>
+                    </div>
+                </article>
+                <article>
+                    <div class="con small" id="dd1-3-3">
+                        <h1>변수 호이스팅</h1>
+                        <article>
+                            <p>JS에는 <strong>변수 호이스팅</strong>이란 기능이 있습니다. 여기에서 호이스팅(Hoisting)는 '끌어 올리다'라는 의미를 가지고 있죠! 그럼, 변수 호이스팅이 무엇일까요?</p>
+                        </article>
+                        <article>
+                            <pre><code class="language-javascript">console.log(str); // 에러 발생!</code></pre>
+                        </article>
+                        <article>
+                            <p>위의 코드는 에러가 발생하죠. 의도는 <code data-b>str</code>이라는 변수를 출력하려는 것인데 <code data-b>str</code> 변수가 선언되어있지 않으니까요!</p>
+                        </article>
+                        <article>
+                            <pre><code class="language-javascript">var str = "귀여운 Pidoc 개발자";
+console.log(str); // 귀여운 Pidoc 개발자 출력</code></pre>
+                        </article>
+                        <article>
+                            <p>반면, 위의 코드는 정상적으로 작동합니다. <code data-b>str</code> 변수를 선언해주었기 때문이죠.</p>
+                        </article>
+                        <article>
+                            <pre><code class="language-javascript">console.log(str);
+var str = "귀여운 Pidoc 개발자";</code></pre>
+                        </article>
+                        <article>
+                            <p>그럼 이 코드는 정상적으로 실행될까요?</p>
+                            <p><strong>정상적으로 실행됩니다!</strong> 이처럼 <strong>나중에 선언된 변수를 참조하는 것</strong>을 변수 호이스팅이라고 합니다.</p>
+                            <p>다만, 변수 호이스팅으로 참조된 값은 무조건 <code data-b>undefined</code>입니다. 즉, 위의 코드는 <code data-b>undefined</code>를 출력하게 되죠.</p>
+                        </article>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <div id="msideview">
+            <button id="sidebtn" type="button"></button>
+        </div>
+        <ul>
+            <h3>개요</h3>
+            <li class="list-el" id="d1-1">자바스크립트?</li>
+            <li class="list-el" id="d1-2">문법</li>
+            <ul class="list-el">
+                <li class="list-el" id="d1-2-1">기본</li>
+                <li class="list-el" id="d1-2-2">짝</li>
+                <li class="list-el" id="d1-2-3">주석</li>
+            </ul>
+            <li class="list-el" id="d1-3">변수와 상수</li>
+            <ul class="list-el">
+                <li class="list-el" id="d1-3-1">변수</li>
+                <li class="list-el" id="d1-3-2">상수</li>
+                <li class="list-el" id="d1-3-2">변수 호이스팅</li>
+            </ul>
+        </ul>
+    </aside>
+</body>
+<script type="text/javascript" src="../../js/act.js"></script>
+</html>

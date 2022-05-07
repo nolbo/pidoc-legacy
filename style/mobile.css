@@ -26,7 +26,7 @@ header {
     left: 0 !important;
     top: calc(100% - 2.5rem - var(--content-padding) * 2);
     width: 100vw;
-    height: fit-content;
+    height: auto;
     margin: 0;
     padding: var(--content-padding);
     text-align: right;
@@ -52,12 +52,27 @@ aside {
     top: 0px;
     left: 0px;
     margin: 0;
-    min-width: var(--sidebar-height);
+    min-height: var(--sidebar-height);
     width: 100vw;
     height: auto;
     max-height: 60vh;
     overflow: auto;
     background-color: var(--background-color);
+    border-bottom: 2px solid var(--box-color);
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+div#msideview {
+    width: 100vw;
+    height: var(--sidebar-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     border-bottom: 2px solid var(--box-color);
 }
 
@@ -67,15 +82,13 @@ button#sidebtn {
     background-image: url(../img/list_icon.svg);
     background-size: var(--sidebtn-size) var(--sidebtn-size);
     background-repeat: no-repeat;
-    background-position: calc(var(--content-padding) + var(--sidebtn-size) / 2) center;
-    width: 100vw;
-    height: var(--sidebar-height);
+    background-position: center center;
+    width: var(--sidebtn-size);
+    height: var(--sidebtn-size);
     border: none;
-    border-bottom: 2px solid var(--box-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: var(--content-padding);
+    margin-left: var(--content-padding);
+    transition-property: background-image;
+    transition-duration: .5s;
 }
 
 aside > ul {
@@ -83,8 +96,8 @@ aside > ul {
     margin-top: 2rem;
 }
 
-aside > ul:first-child {
-    margin-top: calc(var(--sidebar-height) + 2rem) !important;
+aside > ul:nth-child(2) {
+    margin-top: calc(var(--sidebar-height)) !important;
 }
 
 aside h3 {
