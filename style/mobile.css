@@ -69,7 +69,7 @@ button#sidebtn {
     background-repeat: no-repeat;
     background-position: calc(var(--content-padding) + var(--sidebtn-size) / 2) center;
     width: 100vw;
-    height: var(--sidebar-height);
+    height: calc(var(--sidebar-height) - 2px);
     border: none;
     position: fixed;
     top: 0;
