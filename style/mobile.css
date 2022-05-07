@@ -4,6 +4,8 @@
     --content-padding: 1.75rem;
     --content-padding-top: 7.25rem !important;
     --article-padding: 1rem !important;
+    --sidebtn-size: 1rem;
+    --sidebar-height: calc(var(--content-padding) * 2 + var(--sidebtn-size));
 }
 
 *::-webkit-scrollbar {
@@ -62,15 +64,23 @@ button#sidebtn {
     display: block;
     background-color: transparent;
     background-image: url(../img/list_icon.svg);
-    background-size: 1rem 1rem;
-    width: 1rem;
-    height: 1rem;
+    background-size: var(--sidebtn-size) var(--sidebtn-size);
+    width: var(--sidebtn-size);
+    height: var(--sidebtn-size);
     border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: var(--content-padding);
 }
 
 aside > ul {
     display: none;
     margin-top: 2rem;
+}
+
+aside > ul:first-child {
+    margin-top: var(--sidebar-height);
 }
 
 aside h3 {
@@ -85,7 +95,7 @@ main {
     width: 100vw;
     padding-top: calc(var(--content-padding) * 2);
     font-size: .875rem;
-    margin-top: 4.625rem;
+    margin-top: var(--sidebar-height);
 }
 
 main article {
