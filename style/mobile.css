@@ -1,11 +1,11 @@
 
 :root {
     --body-width: 100vw;
-    --content-padding: 1.75rem;
-    --content-padding-top: 7.25rem !important;
-    --article-padding: 1rem !important;
     --sidebtn-size: 1rem;
+    --content-padding: 1.75rem;
     --sidebar-height: calc(var(--content-padding) * 2 + var(--sidebtn-size));
+    --content-padding-top: calc(var(--sidebar-height) + var(--content-padding)) !important;
+    --article-padding: 1rem !important;
 }
 
 *::-webkit-scrollbar {
