@@ -52,6 +52,7 @@ aside {
     top: 0px;
     left: 0px;
     margin: 0;
+    min-width: var(--sidebar-height);
     width: 100vw;
     height: auto;
     max-height: 60vh;
@@ -66,13 +67,14 @@ button#sidebtn {
     background-image: url(../img/list_icon.svg);
     background-size: var(--sidebtn-size) var(--sidebtn-size);
     background-repeat: no-repeat;
-    width: var(--sidebtn-size);
+    width: 100vw;
     height: var(--sidebtn-size);
     border: none;
     position: fixed;
     top: 0;
     left: 0;
-    margin: var(--content-padding);
+    padding: var(--content-padding);
+    box-sizing: content-box;
 }
 
 aside > ul {
