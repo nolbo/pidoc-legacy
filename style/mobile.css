@@ -78,13 +78,13 @@ button#sidebtn {
     padding: var(--content-padding);
 }
 
-aside > ul:first-child {
-    margin-top: calc(var(--sidebar-height) + 2rem) !important;
-}
-
 aside > ul {
     display: none;
     margin-top: 2rem;
+}
+
+aside > ul:first-child {
+    margin-top: calc(var(--sidebar-height) + 2rem) !important;
 }
 
 aside h3 {
