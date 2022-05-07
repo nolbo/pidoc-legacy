@@ -84,7 +84,7 @@ aside > ul {
 }
 
 aside > ul:first-child {
-    margin-top: calc(var(--sidebar-height) + 2rem);
+    margin-top: calc(var(--sidebar-height) + 12rem);
 }
 
 aside h3 {
