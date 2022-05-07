@@ -79,8 +79,7 @@ button#sidebtn {
 }
 
 aside > ul:first-child {
-    margin-top: var(--sidebar-height);
-    background-color: red;
+    margin-top: calc(var(--sidebar-height) + 2rem) !important;
 }
 
 aside > ul {
