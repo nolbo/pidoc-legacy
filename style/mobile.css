@@ -69,8 +69,9 @@ button#sidebtn {
     background-repeat: no-repeat;
     background-position: calc(var(--content-padding) + var(--sidebtn-size) / 2) center;
     width: 100vw;
-    height: calc(var(--sidebar-height) - 2px);
+    height: var(--sidebar-height);
     border: none;
+    border-bottom: 2px solid transparent;
     position: fixed;
     top: 0;
     left: 0;
