@@ -85,7 +85,7 @@ aside > ul {
 
 aside > ul:first-child {
     margin-top: var(--sidebar-height);
-    padding-top: 4rem;
+    background-color: red;
 }
 
 aside h3 {
