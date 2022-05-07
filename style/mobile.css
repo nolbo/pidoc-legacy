@@ -71,7 +71,7 @@ button#sidebtn {
     width: 100vw;
     height: var(--sidebar-height);
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid var(--box-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -84,7 +84,7 @@ aside > ul {
 }
 
 aside > ul:first-child {
-    margin-top: var(--sidebar-height);
+    margin-top: calc(var(--sidebar-height) + 2rem);
 }
 
 aside h3 {
