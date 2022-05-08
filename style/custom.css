@@ -62,6 +62,18 @@ span[data-custom-docbox].language.csharp {
     color: white;
 }
 
+span[data-custom-docbox].language.go {
+    background-color: rgb(1, 173, 216);
+    border-color: rgb(1, 173, 216);
+    color: white;
+}
+
+span[data-custom-docbox].language.rust {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+    color: var(--background-color);
+}
+
 @media screen and (max-width: 767px) {
     span[data-custom-docbox] {
         font-family: 'Outfit';
