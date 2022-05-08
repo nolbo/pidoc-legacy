@@ -30,6 +30,8 @@ header {
     margin: 0;
     padding: var(--content-padding);
     text-align: right;
+    transition-property: top;
+    transition-duration: .3s;
 }
 
 button#theme {
