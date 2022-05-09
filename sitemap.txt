@@ -1,0 +1,12 @@
+https://nolbo.github.io/pidoc/google62fed576b4051191.html
+https://nolbo.github.io/pidoc/index.html
+https://nolbo.github.io/pidoc/kbot/index.html
+https://nolbo.github.io/pidoc/language/c/index.html
+https://nolbo.github.io/pidoc/language/cpp/index.html
+https://nolbo.github.io/pidoc/language/csharp/index.html
+https://nolbo.github.io/pidoc/language/go/index.html
+https://nolbo.github.io/pidoc/language/java/index.html
+https://nolbo.github.io/pidoc/language/js/index.html
+https://nolbo.github.io/pidoc/language/kotlin/index.html
+https://nolbo.github.io/pidoc/language/python/index.html
+https://nolbo.github.io/pidoc/language/rust/index.html
