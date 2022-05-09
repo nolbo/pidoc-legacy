@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /img/
+Disallow: /js/
+Disallow: /style/
+Disallow: /.vscode/
+Sitemap: https://nolbo.github.io/pidoc/sitemap.txt
