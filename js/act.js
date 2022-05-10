@@ -2,7 +2,7 @@ const con_padding = Number(getComputedStyle(document.documentElement).getPropert
 let list_el_is_clicked = false;
 
 document.getElementById('icon').addEventListener('click', () => {
-    location.href = '/';
+    location.href = '/pidoc';
 });
 
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
