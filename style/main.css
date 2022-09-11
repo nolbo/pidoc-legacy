@@ -78,6 +78,7 @@ main table td {
 
 main table td:last-child {
     border-right: none;
+    min-width: 60%;
 }
 
 main table td {
