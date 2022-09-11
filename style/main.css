@@ -75,10 +75,10 @@ main table td {
     border-bottom: 1px solid var(--text-color);
     overflow: auto;
 }
-
+/*
 main table th:first-child {
     max-width: 15vw;
-}
+}*/
 
 main table th:last-child {
     min-width: 60%;
