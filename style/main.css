@@ -76,6 +76,10 @@ main table td {
     overflow: auto;
 }
 
+main table td:first-child {
+    max-width: 10vw;
+}
+
 main table td:last-child {
     border-right: none;
     min-width: 60%;
