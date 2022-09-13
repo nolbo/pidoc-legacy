@@ -80,6 +80,9 @@ main table th:first-child {
     max-width: 15vw;
 }
 
+main table th:last-child {
+    min-width: 65%;
+}
 
 main table td:last-child {
     border-right: none;
