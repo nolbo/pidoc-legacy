@@ -76,6 +76,7 @@ aside h3 {
 }
 
 aside .list-el {
+    font-size: 14px;
     padding-left: 1em;
     cursor: pointer;
     display: block;
